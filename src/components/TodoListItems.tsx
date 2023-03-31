@@ -20,7 +20,7 @@ let TodoListItems = function( {items, handleDelete, handleSelect, selectedId, ha
   if (items.length === 0) {
     return (
       <div className="todo-list-items">
-        <p>You haven't planned anything for today. Add a task above to start!</p>
+        <p>You haven&apos;t planned anything for today. Add a task above to start!</p>
       </div>
     );
   } else {
@@ -37,6 +37,7 @@ let TodoListItems = function( {items, handleDelete, handleSelect, selectedId, ha
             handleSelect={() => handleSelect(item.name, item.tag, item.id)}
             selectedId={selectedId}
             handleCheckChange={() => handleCheckChange(item)}
+            key={item.id}
           />)}
       </ul>
     </>)}

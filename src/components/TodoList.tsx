@@ -33,7 +33,7 @@ const TodoList = function ( { handleSelect, selectedId, countTotal, handleCheckC
 
   return (
     <div className="container bg-light p-4 mt-4 rounded-3 shadow-lg">
-      <h3 className="text-primary">What's your plan for today?</h3>
+      <h3 className="text-primary">What&apos;s your plan for today?</h3>
       {/* <h5 className="mt-4">Add a new task</h5> */}
       <AddTask handleInput={addItem}/>
       <h5 className="mt-4">Currenly on your plate</h5>

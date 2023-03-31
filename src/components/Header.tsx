@@ -16,8 +16,8 @@ const Header = function ( { handleBgImageChange } : HeaderProps ) {
         <button onClick={ () => handleBgImageChange("url('https://i.ytimg.com/vi/1tUPFQ54gqc/maxresdefault.jpg')") } type="button" className="btn btn-light">Lofi</button>
       </div>
 
-      <h1 className="text-white fw-semibold">Let's get to work!</h1>
-      <h5 className="text-light fw-normal">What's the highest leverage thing you can do right now?</h5>
+      <h1 className="text-white fw-semibold">Let&apos;s get to work!</h1>
+      <h5 className="text-light fw-normal">What&apos;s the highest leverage thing you can do right now?</h5>
     </div>
   )
 }

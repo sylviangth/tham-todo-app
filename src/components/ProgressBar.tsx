@@ -17,7 +17,7 @@ const ProgressBar = function ( { totalTasks, completedTasks } : ProgressProps ) 
   } else if ( totalTasks === 0 ) {
     return (
       <div className="card p-3 rounded-2 mt-3 text-center">
-        <h5 className="text-dark mb-0"><i className="bi bi-exclamation-circle-fill me-2"></i>You haven't planned anything to do today.</h5>
+        <h5 className="text-dark mb-0"><i className="bi bi-exclamation-circle-fill me-2"></i>You haven&apos;t planned anything to do today.</h5>
         <p className="mb-0 mt-2">Add your todo list below to start!</p>
       </div>
       )
