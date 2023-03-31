@@ -1,5 +1,10 @@
 import { useState } from "react";
-import CountdownTimer from "./TimerClock";
+// import CountdownTimer from "./TimerClock";
+
+import dynamic from 'next/dynamic'
+const CountdownTimer = dynamic(() => import("./TimerClock"), {
+ssr: false,
+});
 
 const Timer = function () {
 

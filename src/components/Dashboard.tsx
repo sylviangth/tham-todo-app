@@ -1,7 +1,16 @@
 import SelectedTask from "./SelectedTask";
 import Timer from "./Timer";
-import ProgressBar from "./ProgressBar";
-import MusicPlayer from "./MusicPlayer";
+// import ProgressBar from "./ProgressBar";
+// import MusicPlayer from "./MusicPlayer";
+
+import dynamic from 'next/dynamic'
+const ProgressBar = dynamic(() => import("./ProgressBar"), {
+ssr: false,
+});
+
+const MusicPlayer = dynamic(() => import("./MusicPlayer"), {
+ssr: false,
+});
 
 interface Props {
   selectedName: string;

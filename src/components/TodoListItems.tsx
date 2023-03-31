@@ -1,6 +1,11 @@
 import { isPropertySignature } from "typescript";
 import { MouseEvent } from "react";
-import TodoListItem from "./TodoListItem";
+// import { TodoListItem } from "./TodoListItem"
+
+import dynamic from 'next/dynamic'
+const TodoListItem = dynamic(() => import("./TodoListItem"), {
+ssr: false,
+});
 
 interface AllItemsProps {
   items: {}[];

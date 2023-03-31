@@ -1,6 +1,11 @@
 import AddTask from "./AddTask";
-import TodoListItems from "./TodoListItems";
+// import TodoListItems from "./TodoListItems";
 import { useState } from "react";
+
+import dynamic from 'next/dynamic'
+const TodoListItems = dynamic(() => import("./TodoListItems"), {
+ssr: false,
+});
 
 interface TodoListProps {
   handleSelect: any;
